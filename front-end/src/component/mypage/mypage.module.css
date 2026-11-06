@@ -1,0 +1,286 @@
+.mypageContent {
+    display: flex; /* 요소들을 가로로 나란히 배치하기 위해 Flexbox를 사용합니다. */
+}
+
+.mypageContent > div:first-child {
+    flex: 0 0 30%;
+    
+    
+}
+
+.mypageContent > div:first-child #sidebar-container {
+    position: fixed;
+    top: 21.5rem;
+    width: 16rem;
+}
+
+.mypageContent > div:last-child {
+    flex: 0 0 50%;
+    margin-top: 8rem;
+    
+}
+
+/* 루트링크 */
+.mypageRoot {
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+   
+}
+
+.mypageRoot a {
+    text-decoration: none;
+    color: #333;
+}
+/* 루트링크 끝 */
+
+
+
+/* @media (max-width: 1280px){
+    .mypageContent > div:first-child {
+        flex: 0 0 35%;
+        
+    }
+    .mypageContent > div:first-child #sidebar-container{
+        position: fixed;
+        top: 21.5rem;
+        width: 16rem;
+        
+     }
+    .mypageContent > div:last-child {
+        flex: 0 0 50%;
+        margin-top: 8rem;
+    }
+}
+@media (max-width: 1024px){
+    .mypageContent > div:first-child {
+        flex: 0 0 38%;    
+       
+    }
+    .mypageContent > div:first-child #sidebar-container{
+       position: fixed;
+       top: 21.5rem;
+       width: 16rem;
+    }
+    .mypageContent > div:last-child {
+        flex: 0 0 55%;
+        margin-top:8rem;
+    }
+}
+
+@media (max-width: 400px){
+    .mypageContent {
+        justify-content: flex-start;
+    }
+    
+    .mypageContent > div:first-child {
+        flex: 0 0 45%;    
+       
+    }
+    .mypageContent > div:first-child #sidebar-container{
+       position: fixed;
+       left: 0;
+       width: 40%;
+    }
+    .mypageContent > div:last-child {
+        flex: 0 0 55%;
+        margin-top: 5rem;
+    }
+} */
+
+
+.mypageStyle {
+    /* position: fixed;
+    width: 50%;
+    left: 55rem;
+    top: 20rem; */
+    text-align: center;
+}
+.mypage_top_nav ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+
+.mypage_top_tit{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.mypage_title {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.mypage_title_span {
+    font-size: 3.2rem;
+    font-weight: 900;   
+}
+
+.mypage_section1 {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    clear: both;
+    margin-top: 1rem;
+}
+
+.mypage_section1 .date {
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+
+.mypage_content1 p {
+    font-size: 2.8rem;
+    color: #6B6B6B;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;    
+}
+
+.mypage_content1 p>span {
+    font-weight: 900;
+    color:#333;
+}
+
+.mypage_section_color {
+    background-color: #e8f0ff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.mypage_content2 {
+    width: 100%;
+    font-size: 1rem;
+    color: #6B6B6B;
+    font-weight: 900;
+    color:#333;  
+}
+
+
+/* 예금잔액  */
+.mypage_money {
+    margin: 2rem 0 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+
+.mypage_money span {
+    padding-left: 0.8rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 연이율 */
+.mypage_rate {
+    text-align: right;
+    margin-top: -1rem;  
+    padding-bottom: 1rem;  
+    padding-right: 1rem;
+}
+
+.mypage_rate div {
+    margin-bottom: 0.2rem;
+}
+
+.mypage_rate div:last-child {
+    font-size: 1.7rem;
+    align-items: center;
+}
+
+.mypage_rate div:last-child span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 약관내용 */
+.mypage_terms p {
+    font-size: 1.3rem;
+    
+}
+
+/* 테이블 */
+.mypage_table {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.mypage_table, .mypage_table tr, .mypage_table td, .mypage_table th, .mypage_table thead, .mypage_table tbody{
+    width: 100%;
+    border: none !important;
+    font-size: 1.5rem;
+}
+
+.mypage_table_title {
+    text-align: left;
+    padding:  1rem 0 1rem;
+    font-weight: 600 !important;
+    padding-left: 0.5rem;
+}
+
+.mypage_table_content {
+    font-weight: 200;
+    width: 10rem;
+    height: 3rem;
+}
+
+.mypage_dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #679BFF;
+    border-radius: 2rem;
+}
+
+.tab_title {
+    font-weight: bold !important;
+}
+
+.detail_money {
+    font-weight: bold !important;
+    color: #679BFF;
+}
+
+
+.mypage_table td {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    position: relative;
+}
+
+.mypage_table td>div>span {
+    font-weight: bold !important;
+    color: #679BFF;
+}
+
+.mypage_table td button {
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* 버튼 */
+.mp_button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    right: 45%;
+}
+
+.mypage_button {
+    width: 100%;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 10rem;
+}

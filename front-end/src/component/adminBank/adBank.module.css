@@ -1,0 +1,44 @@
+.chart{
+    display: flex;
+    margin-bottom: 10rem;
+    
+}
+.chart>div{
+    margin: 0 auto !important;
+    width: 48%;
+    background-color: #fcfbff;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.chart>div:last-child{
+    margin-left: 2rem;
+}
+.chart>div div{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem;
+}
+.lineChart{
+    margin: 0 auto;
+    width: 100% !important;
+    height: 80% !important;
+}
+.doughnutChart{
+    margin: 0 auto;
+    width: 50% !important;
+    height: 75% !important;
+}
+.selectDate {
+    font-size: 1.2rem;
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 2rem;
+}
+.selectDate input{
+    border: none;
+    width: 10rem !important;
+}
+
+

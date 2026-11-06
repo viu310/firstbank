@@ -1,0 +1,308 @@
+.productContent {
+    display: flex; /* 요소들을 가로로 나란히 배치하기 위해 Flexbox를 사용합니다. */
+}
+
+.productContent > div:first-child {
+    flex: 0 0 30%;
+    
+    
+}
+.productContent > div:first-child #sidebar-container{
+    position: fixed;
+    top: 21.5rem;
+    width: 16rem;
+ }
+.productContent > div:last-child {
+    flex: 0 0 50%;
+    margin-top: 8rem;
+    
+}
+/* 루트링크 */
+.productRoot{
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+   
+}
+.productRoot a{
+    text-decoration: none;
+    color: #333;
+}
+/* 루트링크 끝 */
+
+
+
+/* @media (max-width: 1280px){
+    .productContent > div:first-child {
+        flex: 0 0 35%;
+        
+    }
+    .productContent > div:first-child #sidebar-container{
+        position: fixed;
+        top: 21.5rem;
+        width: 16rem;
+        
+     }
+    .productContent > div:last-child {
+        flex: 0 0 50%;
+        margin-top: 8rem;
+    }
+}
+@media (max-width: 1024px){
+    .productContent > div:first-child {
+        flex: 0 0 38%;    
+       
+    }
+    .productContent > div:first-child #sidebar-container{
+       position: fixed;
+       top: 21.5rem;
+       width: 16rem;
+    }
+    .productContent > div:last-child {
+        flex: 0 0 55%;
+        margin-top:8rem;
+    }
+}
+
+@media (max-width: 400px){
+    .productContent {
+        justify-content: flex-start;
+    }
+    
+    .productContent > div:first-child {
+        flex: 0 0 45%;    
+       
+    }
+    .productContent > div:first-child #sidebar-container{
+       position: fixed;
+       left: 0;
+       width: 40%;
+    }
+    .productContent > div:last-child {
+        flex: 0 0 55%;
+        margin-top: 5rem;
+    }
+} */
+
+
+.productStyle {
+    /* position: fixed;
+    width: 50%;
+    left: 55rem;
+    top: 20rem; */
+    text-align: left;
+}
+.product_top_nav ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+
+.product_top_tit{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+.product_top_nav ul{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0 1rem;
+    background-color: #F6F6F6;
+    border-bottom:  0.2rem solid #679BFF;
+
+}
+
+.product_top_nav li{
+    font-size: 1.2rem;
+    
+}
+.product_top_navOn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    border: 0.2rem solid #679BFF;
+    border-bottom:  0.2rem solid #fff;
+}
+
+.product_top_nav a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+}
+
+.product_section1{
+    clear: both;
+    margin-top: 7rem;
+}
+
+.product_section1 .date{
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+.product_content1 p {
+    font-size: 2.8rem;
+    color: #6B6B6B;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+.product_content1 p>span{
+    font-weight: 900;
+    color:#333;
+}
+.product_section_color {
+    background-color: #e8f0ff;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.product_content2 {
+    width: 100%;
+    font-size: 1rem;
+    color: #6B6B6B;
+    font-weight: 900;
+    color:#333;  
+}
+
+
+/* 예금잔액  */
+.product_money{
+    margin: 2rem 0 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+.product_money span{
+    padding-left: 0.8rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 연이율 */
+.product_rate {
+    text-align: left;
+    margin-top: -1rem;  
+    padding-bottom: 1rem;  
+    padding-left: 1rem;
+}
+.product_rate div{
+    margin-bottom: 0.2rem;
+}
+.product_rate div:last-child{
+    font-size: 1.7rem;
+    align-items: center;
+}
+.product_rate div:last-child span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 약관내용 */
+.product_terms p {
+    font-size: 1.3rem;
+    
+}
+
+/* 테이블 */
+.product_table{
+    margin-bottom: 2rem;
+}
+.product_table, .product_table tr, .product_table td, .product_table th, .product_table thead, .product_table tbody{
+    width: 100%;
+    border: none !important;
+}
+.product_table thead tr{
+    background-color: #F6F6F6;
+    padding:  1rem 0 1rem;
+}
+.product_table th{
+    padding-left: 1rem;
+    font-weight: 200;
+}
+.product_table th span{
+    padding-left: 0.5rem;
+}
+
+.product_dot{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #679BFF;
+    border-radius: 2rem;
+}
+.tab_title{
+    font-weight: bold !important;
+}
+.detail_money{
+    font-weight: bold !important;
+    color: #679BFF;
+}
+.product_table td{
+    border-bottom: 1px solid #eee !important;
+}
+
+.product_table td{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    position: relative;
+}
+
+
+
+.product_table td>div>span{
+    font-weight: bold !important;
+    color: #679BFF;
+}
+
+.product_table td button{
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* 버튼 */
+.pd_button {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: right;
+    position: absolute;
+    right: 0;
+}
+
+.product_button {
+    width: 100%;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+
+/* 페이징 */
+.product_paging{
+    margin: 5rem 0 5rem;
+    text-align: center;
+}
+.page_num{
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #679BFF;
+}

@@ -1,0 +1,168 @@
+/* 이체 */
+
+.ts_info{
+    margin: 2rem 0;
+    border: 1px solid #679BFF;
+    padding: 1.5rem;
+}
+.ts_info div{
+    color: #9e9e9e;
+}
+.ts_info div:first-child{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #6B6B6B;
+}
+.ts_tbl{
+    margin: 2rem 0 2rem;
+}
+.ts_tbl th{
+    background-color: #eee;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #6B6B6B;
+}
+.ts_tbl tr td:first-child{
+    background-color: #F6F6F6;
+    width: 20%;
+
+}
+.ts_tbl tr td{
+    padding: 1rem;
+    vertical-align: middle;
+}
+.ts_tbl input{
+    padding: 0.2rem;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.1); 
+    border: none;
+    width: 15rem;
+}
+.ts_tbl select{
+    padding: 0.2rem;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.1); 
+    border: none;
+    width: 15rem;
+}
+.transfer_btnbox{
+    text-align: center;
+    padding:  2rem 0 2rem !important;
+    background-color: #fff !important;
+}
+.transfer_btnbox button{
+    border: none;
+    margin-left: 1rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border: 1px solid #eee;
+    width: 10%;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+}
+.set_money{
+    margin-bottom: 1rem;
+}
+.set_money button{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #eee;
+    width: 4rem;
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+
+}
+.money_box{
+    float: left;
+}
+
+/* 다계좌이체 */
+.ts_grey {
+    background-color: #F6F6F6 !important;
+}
+.tr_width td{
+    width: 20rem !important;
+}
+.td_title td{
+    background-color: #F6F6F6 !important;
+    border-right: 1px solid #e6e6e6;
+}
+.td_title td:last-child{
+    border-right: none;
+}
+.td_content input{
+    width: 10rem;
+}
+.td_content td{
+    background-color: #fff !important;
+    border-right: 1px solid #e6e6e6;
+}
+.td_content td:last-child{
+    border-right: none;
+}
+.transfer_reset button{
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+.transfer_name{
+    width: 5rem !important;
+}
+.ts_grey2{
+    background-color: #F6F6F6 !important;
+    width: 15rem;
+}
+
+.tr_width2 td{
+    width: 20rem !important;
+}
+.tr_width2 td input{
+    width: 10rem !important;
+}
+.ts_date span{
+    margin-right: 1rem;
+}
+.ts_date div:first-child{
+    margin-bottom: 0.2rem;
+}
+.ts_date input{
+    width: 8rem;
+}
+.warning_txt{
+    color: crimson;
+}
+.ts_account_coment{
+    width: 20rem;
+    height: 5rem;
+    border: 1px solid #eee;
+    outline: none;
+}
+
+/* 캘린더 */
+
+.calendar table{
+    background-color: #fff !important;
+}
+.calendar table tr th{
+    background-color: rgb(227, 243, 255) !important;
+    border: none;
+}
+.calendar table tr td:first-child{
+    background-color: #fcfcfc !important;
+}
+
+.calendar table tr th a{
+    text-decoration: none;
+}
+
+.warning_txt2{
+    color: crimson;
+    font-size: 1rem;
+}
+
+/* 이체시작일 재선택 */
+.reStartDate button{
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    background-color: #679BFF;
+    color: #fff;
+}

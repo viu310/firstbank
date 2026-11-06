@@ -1,0 +1,62 @@
+#sidebar-container {
+    width: auto;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#sidebar {
+    width: 16rem;
+    border: none;
+    padding: 0;
+    border-top: none;
+    background-color: #fff; /* 원하는 배경색으로 변경 */
+}
+#sidebar-container .MuiSvgIcon-root{
+    color: black;
+}
+#sidebar-container .MuiTypography-root{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#item-with-border {
+    border-top: 1px solid #ccc;
+}
+
+#item-with-border.active {
+    background-color: #679BFF;
+     color: #ffffff !important;
+}
+
+#item-with-border:hover {
+    background-color: #679BFF;
+    color: #ffffff;
+}
+
+#item-with-border:hover #custom-link {
+    color: #ffffff;
+}
+
+#custom-link {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+#custom-link-down {
+    font-size: small;
+    text-decoration: none;
+    color: #333;
+}
+
+#sidebar .active {
+    background-color: #679BFF;
+}
+
+#sidebar .active-text {
+    color: #ffffff !important;
+}
+

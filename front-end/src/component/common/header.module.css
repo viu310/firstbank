@@ -1,0 +1,70 @@
+/* 헤더시작 */
+
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	z-index: 999;
+ }
+ .headerbox{
+	display: flex;
+	align-items: center;
+ }
+ .headertab{
+	margin: 0 auto;
+ }
+ 
+ .headertab a{
+	width: 12rem;
+	color: #333;
+	font-size: 1.5rem;
+	padding: 2rem;
+ }
+ 
+ 
+ .logo{
+	width: 10rem;
+	margin-left: 2rem;
+ }
+ .rightbox{
+	margin-right: 2rem;
+ }
+ .rightbox a{
+	text-decoration: none;
+	color: #333;
+	font-size: 1.2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+ }
+ 
+
+ /* 푸터 */
+ .footer{
+	background-color: #fff;
+	margin: 0 auto;
+}
+.footer_con{
+	width: 60%;
+	margin: 0 auto;
+
+}
+.footer_txt{
+	text-align: left;
+	padding: 3rem;
+	color: #464646;
+}
+.footer_txt div{
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+ }
+ .footer_txt div span{
+	color: #679BFF;
+	font-weight: bold;
+}
+.footer_txt div:first-child{
+	 font-weight: bold;
+	font-size: 1.5rem;
+	color:#333;
+}

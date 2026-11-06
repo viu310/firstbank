@@ -1,0 +1,499 @@
+/* 계산기 */
+.cal {
+    display: inline-block;
+
+}
+
+.cal button:first-child {
+    margin-left: 1rem;
+    padding: 0.2rem 0 0.15rem 0;
+    vertical-align: middle;
+    color: #333;
+    background-color: #eee;
+}
+
+.num {
+    width: 15rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.btn1 {
+    border: 2px solid #eee !important;
+    background-color: #fff;
+    margin: 0.2rem;
+    text-align: center !important;
+    width: 3rem;
+    height: 3rem;
+    text-align: right;
+    color: #333;
+    font-weight: 400;
+}
+
+.cal_btn {
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+/* 루트링크 뱅킹관리 > 계좌조회 > 예금 */
+.bankRoot {
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+
+}
+
+.bankRoot a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 루트링크 끝 */
+
+.bankStyle {
+    text-align: left;
+}
+
+.bankStyle .top_nav ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+.bankStyle .top_tit {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bankStyle .top_nav ul {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #F6F6F6;
+    border-bottom: 0.2rem solid #679BFF;
+
+}
+
+.bankStyle .top_nav li {
+    font-size: 1.2rem;
+
+}
+
+.bankStyle .top_nav .on {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    border: 0.2rem solid #679BFF;
+    border-bottom: 0.2rem solid #fff;
+}
+
+.bankStyle .top_nav button {
+    font-size: 1.2rem;
+    background-color: #F6F6F6;
+    border: none;
+
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+}
+
+.bankStyle .section1 {
+    clear: both;
+    margin-top: 2rem;
+}
+
+.section1 .date {
+    font-size: 1.2rem;
+    color: #6B6B6B;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.section1 .content1 p {
+    font-size: 2.8rem;
+    color: #6B6B6B;
+}
+
+.section1 .content1 p>span {
+    font-weight: 900;
+    color: #333;
+}
+
+/* 총잔액 */
+.all_money {
+    text-align: right;
+    margin-top: -1rem;
+}
+
+.all_money div {
+    margin-bottom: 0.2rem;
+
+}
+
+.all_money div:last-child {
+    font-size: 1.7rem;
+    align-items: center;
+}
+
+.all_money div:last-child span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 총잔액끝 */
+
+/* 예금잔액  */
+.bank_money {
+    margin: 2rem 0 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+
+.bank_money span {
+    padding-left: 0.8rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+/* 테이블 */
+.bank_table {
+    margin-bottom: 2rem;
+}
+
+.bank_table,
+.bank_table tr,
+.bank_table td,
+.bank_table th,
+.bank_table thead,
+.bank_table tbody {
+    width: 100%;
+    border: none !important;
+}
+
+.bank_table thead tr {
+    background-color: #F6F6F6;
+    padding: 1rem 0 1rem;
+}
+
+.bank_table th {
+    padding-left: 1rem;
+    font-weight: 200;
+}
+
+.bank_table th span {
+    padding-left: 0.5rem;
+}
+
+.bank_dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #679BFF;
+    border-radius: 2rem;
+}
+
+.tab_title {
+    font-weight: bold !important;
+    font-size: 1.3rem;
+}
+
+.detail_money {
+    font-weight: bold !important;
+    color: #679BFF;
+}
+
+.bank_table th {
+    padding: 1.5rem;
+}
+
+.bank_table td {
+    border-bottom: 1px solid #eee !important;
+    align-items: center;
+}
+
+.bank_table td {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.ac_info {
+    width: 50% !important;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ac_info_money,
+.ac_info_btn {
+    text-align: right;
+    width: 25%;
+}
+
+.bank_table td>div>span {
+    font-weight: bold !important;
+    color: #679BFF;
+}
+
+.bank_table td button {
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+    width: 4rem;
+    color: #333;
+    font-weight: 200;
+}
+
+
+/* 페이징 */
+.bank_paging {
+    margin: 5rem 0 5rem;
+    text-align: center;
+}
+
+.page_num {
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #679BFF;
+}
+
+/* 계좌이체 페이지*/
+.bankStyle>hr {
+    border: 1px solid #333;
+}
+
+.trans_step {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #6B6B6B;
+}
+
+.bank_table input {
+    padding: 0.2rem;
+}
+
+.money_box {
+    width: 20rem;
+    height: 2.1rem;
+
+    display: inline-block;
+}
+
+.money_box input {
+    width: 16.5rem;
+}
+
+.bank_table tbody td {
+    display: flex;
+    align-items: center;
+}
+
+.bank_table tbody td>div:first-child {
+    width: 25%;
+    border-right: 2px solid #eee;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.transfer_btn {
+    padding: 1rem !important;
+    width: 10rem !important
+}
+
+.ac_info {
+    border-right: none !important;
+}
+
+.close_btn {
+    float: right;
+    top: -10px;
+    width: 5rem;
+    margin-left: 5rem;
+}
+
+/* 계좌상세조회 */
+
+.top_txt {
+    font-size: 1.5rem;
+    color: #6B6B6B;
+}
+
+.section1 .content2 p {
+    font-size: 2.8rem;
+    color: #6B6B6B;
+}
+
+.section1 .content2 p>span {
+    font-weight: 900;
+    color: #333;
+}
+
+.bank_money_d {
+    text-align: right;
+    margin-top: -1rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.bank_money_d div {
+    margin-bottom: 0.2rem;
+
+}
+
+.bank_money_d div:first-child {
+    font-size: 1.5rem;
+}
+
+.bank_money_d div:last-child {
+    font-size: 1.7rem;
+    align-items: center;
+}
+
+.bank_money_d div:last-child span {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+
+.detail_top_btn {
+    text-align: center;
+    margin: 5rem 0 3rem;
+}
+
+.detail_top_btn button {
+    margin: 0 auto;
+    border: none;
+    font-weight: 400;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 20rem;
+}
+
+.ac_info div:first-child {
+    font-size: 1.3rem;
+}
+
+.ac_info div:last-child {
+    font-weight: 400;
+}
+
+.ac_info_money_d {
+    width: 50%;
+    text-align: right;
+}
+
+.ac_out_money {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: crimson;
+}
+
+.ac_in_money {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #679BFF;
+
+}/* 모달 */
+.modal {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalBox {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 40rem; 
+    height: 30rem;
+    margin-top: 30rem;
+    padding: 2rem;
+    text-align: center; 
+    position: relative; 
+}
+.modaltit{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #6B6B6B;
+}
+.modaltxt{
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+.modaltxt span{
+    font-weight: 600;
+}
+.modalClose {
+    position: absolute; 
+    bottom:0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.modalSelect button{
+    border: none;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: #679BFF;
+    font-weight: 600;
+    color: #fff;
+}
+.modalClose button {
+    background-color: #eee;
+    color: #6B6B6B;
+    font-weight: 900;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem 0 2rem;
+    width: 100%;
+}
+.inputModal input{
+    border: none;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+}
+.inputModal input,.inputModal div{
+    font-size: 1.2rem;
+}
+.inputsubtxt{
+    font-size: 1rem;
+    font-weight: 400 !important;
+}
+.inputModal>div{
+    margin-bottom: 1rem;
+}
+.inputModal select{
+    border: none;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+}
+.modalBox2{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 40rem;
+    height: 55rem;
+    margin-top: 15rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}

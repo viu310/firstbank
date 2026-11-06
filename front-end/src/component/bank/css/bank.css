@@ -1,0 +1,237 @@
+/* input제어 */
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+/* 반응형정렬 절대 손대지마시오 */
+.bankContent {
+    display: flex;
+
+}
+
+.bankContent>div:first-child {
+    flex: 0 0 30%;
+
+}
+
+.bankContent>div:first-child #sidebar-container {
+    position: fixed;
+    top: 21.5rem;
+    width: 16rem;
+}
+
+.bankContent>div:last-child {
+    flex: 0 0 50%;
+    margin-top: 8rem;
+
+}
+
+@media (max-width: 1280px) {
+    .bankContent>div:first-child {
+        flex: 0 0 35%;
+
+    }
+
+    .bankContent>div:first-child #sidebar-container {
+        position: fixed;
+        top: 21.5rem;
+        width: 16rem;
+
+    }
+
+    .bankContent>div:last-child {
+        flex: 0 0 60%;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bankContent>div:first-child {
+        flex: 30%;
+
+    }
+
+    .bankContent>div:first-child #sidebar-container {
+        position: fixed;
+        top: 21.5rem;
+        width: 16rem;
+    }
+
+    .bankContent>div:last-child {
+        flex: 0 0 55%;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .bankContent {
+        justify-content: flex-start;
+    }
+
+    .bankContent>div:first-child {
+        flex: 0 0 28%;
+
+    }
+
+    .bankContent>div:first-child #sidebar-container {
+        position: fixed;
+        left: 0;
+        width: 40%;
+    }
+
+    .bankContent>div:last-child {
+        flex: 0 0 55%;
+        margin-top: 5rem;
+    }
+}
+
+/* 반응형정렬끝 절대 손대지마시오 */
+
+/* 달력 */
+.datepicker .react-datepicker {
+    height: 18rem !important;
+
+}
+
+/* full calendar */
+.fc-day-sun a {
+    color: crimson;
+}
+
+/* 토요일 날짜: 파란색 */
+.fc-day-sat a {
+    color: #679BFF;
+}
+
+/*요일*/
+.fc-col-header-cell-cushion {
+    color: #000;
+}
+
+.fc-col-header-cell-cushion:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*일자*/
+.fc-daygrid-day-number {
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*more버튼*/
+.fc-daygrid-more-link.fc-more-link {
+    color: #000;
+}
+
+/*일정시간*/
+.fc-daygrid-event>.fc-event-time {
+    color: #000;
+}
+
+/*시간제목*/
+.fc-daygrid-dot-event>.fc-event-title {
+    color: #000 !important;
+}
+
+
+.fc-event {
+    border: none !important;
+    color: #333;
+    background-color: #fafafa;
+}
+
+
+
+/*month/week/day*/
+.fc-button-active {
+    border-color: #797466 !important;
+    background-color: #29220e !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.fc tr td:first-child {
+    width: 14%;
+}
+
+.fc {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fc-event-main {
+    margin-bottom: 0.2rem;
+}
+
+.fc-header-toolbar button {
+    border: none !important;
+    color: #fff;
+    background-color: #061568 !important;
+    outline: none !important;
+}
+
+.fc-day-today {
+    --fc-today-bg-color: rgb(227, 243, 255);
+}
+
+.react-datepicker__month-container {
+
+    min-height: 18rem !important;
+}
+
+/* 페이징 */
+
+
+/* 진짜 페이징 */
+.deliveryListPaging {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.pagination {
+    font-size: 1.2rem;
+    list-style-type: none;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.pagination li {
+    display: inline;
+    margin-right: 5px;
+    border: none;
+}
+
+.pagination li:first-child {
+    /* background-image: url('../../../resources/images/common/double_left.png') no-repeat;
+    font-size: 50px;
+    background-size: 100px;
+    background-position: 40px center; */
+}
+
+.pagination li a,
+.pagination li span {
+    padding: 1rem 1.4rem;
+    text-decoration: none;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    color: #333;
+}
+
+.pagination li.active a,
+.pagination li.active span {
+    background-color: #679BFF;
+    font-weight: 600;
+    color: #fff;
+}
+.react-datepicker__month-container{
+    width: 20rem !important;
+}

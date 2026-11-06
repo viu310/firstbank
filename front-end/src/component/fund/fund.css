@@ -1,0 +1,657 @@
+
+/* 페이징 */
+.Fund_paging{
+  margin: 5rem 0 5rem;
+  text-align: center;
+}
+.Fund_page_num{
+  margin: 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #679BFF;
+}
+
+.FundpageNation {
+  margin: 0 auto; /* 가운데 정렬 */
+  display: flex; /* Flexbox를 사용하여 요소를 가운데 정렬합니다. */
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+}
+
+/* 루트링크 뱅킹관리 > 계좌조회 > 예금 */
+.FundRoot{
+  display: block;
+  text-align: right;
+  margin-bottom: 2rem;
+ 
+}
+.FundRoot a{
+  text-decoration: none;
+  color: #333;
+}
+/* 루트링크 끝 */
+
+/* Main */
+
+.main-container {
+  position: relative; /* 자식 요소를 위치시키기 위해 부모 요소를 상대 위치로 설정합니다. */
+}
+
+.image-with-text {
+  position: relative; /* 자식 요소를 위치시키기 위해 부모 요소를 상대 위치로 설정합니다. */
+  /* width: 100%;
+  height: 500px; */
+}
+
+.FundMaintop {
+  width: 100%;
+  height: 1000px;
+  margin-top: 2.6rem;
+  opacity: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../resources/images/Fund/메인배경화면.jpg");
+  background-size: cover; /* 이미지를 화면에 맞게 조정합니다. */
+  background-position: 30% 50%; /* 이미지 위치를 조정합니다. */
+}
+
+.text-overlay {
+  position: absolute; /* 상대적으로 위치시킨 부모 요소를 기준으로 절대 위치로 설정합니다. */
+  top: 50%; /* 부모 요소의 상단에서 50% 떨어진 위치에 텍스트를 배치합니다. */
+  left: 20%; /* 수정된 부분: 부모 요소의 좌측에서 20% 떨어진 위치에 텍스트를 배치합니다. */
+  transform: translate(-20%, -87%);
+}
+
+.FundMainText1 {
+  /* text-align: left !important; */
+  float: left;
+  font-weight: bold;
+  font-size: 7rem;
+  color: #fff;
+  text-shadow:  0 5px 10px #4e4e4e;
+}
+
+.MainBestThing {
+  background-color: #f2f7f7;
+  height: 1150px;
+  padding-top: 10rem;
+}
+
+.MainBestThingTop {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column; /* 요소를 세로 방향으로 배치합니다. */
+  align-items: center; /* 세로 중앙 정렬합니다. */
+}
+
+.MainBestThing span {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.MainNewThing {
+  background-color: #f7fcfc;
+  height: 1150px;
+  padding-top: 10rem;
+}
+
+.MainNewThing span {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+
+
+/* 슬라이드 */
+.FundSlide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+}
+
+.maintop .FundSlideImgBox {
+    float: left;
+}
+
+.FundSlideB {
+  margin: 0 auto;
+}
+
+.mainbottom .FundPossibilityText{
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+}
+
+.Bestfund {
+    margin-top: 10rem;
+    margin-left: 10rem;
+    background-color: #eee;
+    height: 3rem;
+    padding-top: 0.3rem;
+    border-radius: 0.4rem;
+}
+
+.Bestfund h2{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* 가입가능한 대출 리스트 */
+.Fundlist .list-group{
+  width: 20rem;
+  border: 0.4rem solid #eee !important;
+  border-radius: 1rem;
+}
+.Fundlist .list-group-item{
+  padding: 2rem 3rem 2rem 3rem;
+  font-size: 1.4rem;
+}
+
+.Fundlist .list-group-item a{
+  text-decoration: none;
+  color: #333;
+}
+
+.Fundlist .list-group-item span{
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  color: #c3d8ff;
+}
+
+/* 진짜 가입가능한 대출 리스트 */
+.FundMainRealBestList {
+  width: 100%;
+}
+
+.FundMainRealBestList .list-group {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.FundMainRealBestList .list-group .list-group-item {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: none;
+}
+.list-group-item{
+  border-bottom: 1px solid #eee !important;
+  padding: 1.5rem;
+
+}
+.FundMainRealBestList .list-group .list-group-item span{
+  padding-right: 1rem;
+  color: #679BFF;
+  float: left;
+  padding-left: 3rem;
+  font-size: 2rem;
+}
+
+.FundMainRealNewList {
+  width: 100%;
+}
+
+.FundMainRealNewList .list-group {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.FundMainRealNewList .list-group .list-group-item {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: none;
+
+  border-bottom: 1px solid #eee !important;
+  padding: 1.5rem;
+}
+
+.FundMainRealNewList .list-group .list-group-item span{
+  padding-right: 1rem;
+  color: #679BFF;
+  float: left;
+  padding-left: 3rem;
+  font-size: 2rem;
+}
+
+
+.list-group-item Button{
+  width: 7rem;
+  height: 3rem;
+  border: 1px solid #e4e4e4 !important;
+  font-size: 1.2rem;
+  border: none;
+  color: #333;
+  background-color: #fff;
+  float: right;
+}
+
+.mainbottom .FundPossibilityText{
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  background-color: #eee;
+  height: 6rem;
+}
+
+.FundPossibilityText h2 {
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* FundPossibilitylist */
+/* .FundPossibilitylist {
+  margin-bottom: 13rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.FundPossibilitylist .list-group .list-group-item {
+  height : 5rem;
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+  color: #6d6d6d;
+  font-size: 1.8rem;
+}
+
+.FundPossibilitylist .list-group .list-group-item span{
+  padding-right: 1rem;
+  color: #679BFF;
+  float: left;
+  padding-left: 3rem;
+}
+
+.FundPossibilitylist .list-group .list-group-item a{
+  padding-left: 25rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  float: right;
+  color: #679BFF;
+} */
+
+/* 대출 상품 정보 */
+.FundProductInfo>img{ /* 배경 */
+  position: absolute;
+  z-index: -999;
+  width: 86rem;
+  right: -238px;
+  top: 7px;
+  opacity: 0.5;
+  margin-right: 70rem;
+  /* background-image: url("../../resources/images/Fund/fund_img1.png") no-repeat; 
+   background-size: cover; 
+   background-position: center; */
+
+}
+
+/* .FundDetailTitle {
+
+} */
+
+.FundProductInfo h2 {
+  margin-top: 5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  /* left: 50%; 부모 요소의 좌측에서 50% 떨어진 위치에 텍스트를 배치합니다. */
+  /* transform: translate(-50%, -50%); 텍스트를 수평 및 수직으로 가운데로 정렬합니다. */
+  background-color: rgba(255, 255, 255, 0.2); /* 텍스트 배경의 투명도를 조절합니다. */
+  padding: 20px; /* 텍스트 주위에 여백을 추가합니다. */
+  border-radius: 10px; /* 텍스트 배경에 모서리를 둥글게 만듭니다. */
+  font-weight: 600;
+  font-size: 4rem;
+  color: #333;
+}
+
+.FundProductInfoTop {
+  margin-top: 5rem;
+}
+
+.FundProductInfoTop.d-flex {
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+}
+
+.FundProductInfoTop h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-right: 44rem;
+}
+
+.FundInfoBox {
+  border: 1px solid #eee !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  width : 100%;
+  flex-direction: column; /* 자식 요소들을 세로로 정렬 */
+}
+
+.FundInfoBox .FundInfoBoxText {
+  padding: 0.5rem;
+}
+
+.FundInfoBoxText .Textleft {
+  margin-left: 1rem;
+  width: 15rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.FundInfoBoxText div{
+  text-align: left !important;
+  padding: 1rem;
+}
+
+.FundInfoBoxText .TextRight {
+  align-items: center; /* 수직 가운데 정렬 */
+  font-size: 1.4rem;
+}
+.FundInfoBoxText{
+  border-bottom: 1px solid #eee;
+}
+
+.FundInfoBoxTextCenter {
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
+.FundInfoBoxTextCenter .TextRightCenter {
+
+  font-weight: 400;
+}
+
+/* FundMianInfoBox */
+.FundMianInfoBox {
+  border: 1px solid #679BFF !important;
+  background-color: #f7faff;
+  width : 30rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 자식 요소를 수직 방향으로 가운데 정렬 */
+}
+
+.FundMianInfoBoxDiv {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #679BFF;
+  font-weight: 600;
+  width: 20rem;
+}
+
+
+.fdTitle{
+  padding-bottom: 2rem !important;
+}
+.MainTextleft{
+  text-align: left !important;
+  font-weight: 400;
+  color: #333;
+  width: 12rem;
+  padding: 0.5rem;
+}
+.MainTextRight{
+  padding: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.FundMainInfoBoxText{
+  border-bottom: 1px solid #679BFF;
+}
+.FundProductInfoButtom {
+
+  padding: 4rem;
+}
+
+.FundProductInfoButtom Button {
+  width: 13rem;
+  height: 6rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+/* 상품 가입 */
+.FundProductTry{
+  margin-top: 4rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.FundProductTry h2 {
+  font-weight: 600;
+  padding-bottom: 2rem;
+  border-bottom: 4px solid #eee;
+}
+
+.FundProductText1{
+  padding: 2.5rem;
+  background-color: #f7f7f7;
+  margin-top: 1.5rem;
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.FundProductBox {
+  
+  margin-top: 3.3rem;
+  width: 1100px;
+}
+
+.FundCheckpsoo{
+  text-align: left;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+}
+
+.FundCheck .form-check {
+  display: flex;
+  margin-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.FundCheck .form-check-input {
+  margin: 0 auto; /* 인라인 요소에는 margin이 적용되지 않으므로 적용되지 않음 */
+  justify-content: center;
+}
+
+.FundCheck .form-check-label {
+  margin-bottom: 3rem;
+  margin: 1 auto;
+}
+
+/* FundHeightList */
+.FundInfoMyTop {
+  height: 73rem;
+}
+
+/* search ber */
+.FundListSearch {
+  float: right;
+  margin-top: 1.2rem;
+  width: 28rem;
+  height: 6rem;
+}
+
+.FundHiListDiv {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.FundHiList {
+  margin: 0 auto; /* 테이블을 수평으로 가운데 정렬합니다. */
+}
+
+/* 테이블 스타일 */
+.Fundtable {
+  border-collapse: collapse;
+  width: 50%; /* 테이블 너비 지정 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.FundHiList {
+  height: 100%;
+  width: 90%;
+}
+
+.FundInfoMyTop h2{
+  margin-top: 10rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #eee;
+}
+
+.FundHiList .FundHLtHead {
+  background-color: #fafafa;
+  height: 3.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.FundHiList .FundHLtbody {
+  margin-top: 10rem;
+  border-bottom: 2px solid #eee;
+}
+.FundHLtbody tr{
+  border-bottom: 2px solid #eee;
+}
+.FundHLtbody td{
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.FundHLtbody td span{
+  color: #7c7c7c;
+}
+
+.FundHiList .FundHLtbody Button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  color: #679BFF;
+  background-color: #eee;
+}
+
+/* 투자금 조정 신청 */
+.Fund_RePayMentTop h2 {
+  margin-top: 10rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #eee;
+}
+
+.Fund_RePayMentHead {
+  font-weight: 600;
+  font-size: 1.3rem;
+  float: left;
+  background-color: #eee;
+  color: #333;
+  width: 100%;
+  padding: 1.6rem 0 1.6rem 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.Fund_RePayMentHiList {
+  height: 100%;
+  width: 90%;
+}
+
+.FundInfoMyTop h2 {
+  margin-top: 10rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #eee;
+}
+
+.FundInfoMyTop h1 {
+  font-weight: 400;
+  color: #d7d7d7;
+}
+
+
+/* 투자금 수정 */
+.Fund_RePayMentbody tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.Fund_RePayMentbody td {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.Fund_RePayMentbody .Fund_RePayMentbodyTitle {
+  border-right: 2px solid #eee;
+  padding-right: 1rem;
+  font-size: 1.1rem;
+  width: 25%;
+}
+
+.Fund_RePayMentbody .Fund_RePayMentbodyInput {
+  text-align: left;
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.Fund_RePayMentbodyInput input {
+  border: 1px solid #d7d7d7;
+  width: 20.4rem;
+}
+
+.Fund_RePayMentbody td Button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  color: #679BFF;
+  background-color: #eee;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto;
+}
+.fdTxt{
+  margin-top: 1em;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #8f8f8f;
+}
+.fdBtn{
+  margin-top: 2.5rem;
+}
+.fdBtn button{
+  width: 100%;
+  padding: 1rem;
+  background-color: #679BFF;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+}

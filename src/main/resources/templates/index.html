@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Sample List</title>
+</head>
+<body>
+
+<div align="center">
+	<h1> Product Manager </h1>
+	<a href="/new">Create New Product</a><br><br>
+	
+	<table border="1" cellpadding="10">
+		<thead>
+			<th> 계좌번호 </th>
+			<th> 계좌 이름 </th>
+			<th> 계좌 잔고 </th>
+			<th> 고객 번호 </th>
+			<th> 계좌 상태 </th>
+			<th> 계좌 일일한도 </th>
+			<th> 기능 </th>
+		</thead>
+		
+		<tbody>
+			<!-- <c:forEach var="dto" items="${list}"> -->
+				<tr th:each="dto : ${list}"> 
+					<td th:text="${dto.account_id}">account_id</td>			
+					<td th:text="${dto.account_name}">  </td>			
+					<td th:text="${dto.account_balance}">  </td>			
+					<td th:text="${dto.customer_num}">  </td>			
+					<td th:text="${dto.account_status}">  </td>			
+					<td th:text="${dto.account_limit}">  </td>			
+					<td>
+						<a th:href="@{'/edit/' + ${dto.account_id}}">Edit</a> &nbsp;&nbsp;&nbsp;
+					 	<a th:href="@{'/delete/' + ${dto.account_id}}">Delete</a> 
+					 </td>			
+				</tr>
+		</tbody>
+	</table>
+	<!-- 실행 : 메인클래스  우클릭 > Run As > Run On Server > Spring Boot App > 크롬실행 => localhost:8081-->
+</div>
+
+</body>
+</html>

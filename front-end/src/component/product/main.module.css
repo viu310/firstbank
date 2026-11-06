@@ -1,0 +1,202 @@
+.content {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; 
+}
+
+
+
+
+@media (max-width: 1280px){
+    .content {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .content {
+        flex-direction: column;
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .content {
+        flex-direction: column;
+    }
+    
+}
+
+
+.section1 {
+    scroll-snap-align: start;
+    display: flex;
+    height: 100vh; 
+    background: white; 
+}
+
+.section2 {
+    scroll-snap-align: start;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    
+}
+
+.section3 {
+    scroll-snap-align: start;
+    display: flex;
+    background: white;
+    height: auto;
+}
+
+.section1_title {
+    width: 100%;
+    padding-top: 10rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #333;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section1_slide {
+    width: 100%;
+    padding-top: 5rem;
+    align-items: center; 
+}
+
+.section2_date {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    padding-right: 21rem;
+    font-size: 2rem;
+    color: #acacac;
+}
+
+.section2_title {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 5rem;
+}
+
+.section2_list {
+    display: flex;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+
+/* 손본이미지 */
+.pd_sc1{
+    margin-top: 5.5rem;
+    background-color: #e2ebff;
+}
+.pd_sc1 a{
+    text-decoration: none;
+}
+.pd_sc1 a div{
+    color:#333;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 8rem;
+}
+.pd_sc1 a span{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.section1_content img{
+    width: 50rem;
+    margin: 0 auto;
+    margin-top: -5rem;
+}
+.pd_v1{
+    width: 30rem;
+    margin: 0 auto;
+}
+
+
+
+
+.section3_title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    color: black;
+}
+
+.strongText {
+    font-size: 5rem;
+    color: #679BFF;
+}
+
+.search_container {
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: #e2ebff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.search_container_button {
+    background-color: #679BFF; 
+    color: white; 
+    border: none;
+    outline: none;
+    width: 10rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem;
+}
+  
+.search_container button:hover {
+    background-color: #8ccbff; 
+}
+.search-search_container input[type="text"] {
+    display: flex;
+    border: none !important;
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.pd_sc3{
+    margin-top: 30rem;
+    background: linear-gradient(to bottom, white, #fbfbff, #f6f6ff); 
+    height: 30rem;
+}
+.pd_sc3 input {
+    border: none;
+    padding: 1rem;
+    width: 30%
+}
+
+.listitem {
+    background-color: #fbfbff;
+}
+
+
+.listitem:hover {
+    background-color: #679BFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+}

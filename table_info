@@ -1,0 +1,48 @@
+
+1) 계좌이체 테이블
+
+CREATE TABLE transfer
+(
+    `transfer_num`        int            NOT NULL    AUTO_INCREMENT,
+    `account_id`          VARCHAR(16)    NOT NULL, 
+    `transfer_account`    VARCHAR(16)    NOT NULL, 
+    `transfer_type`       VARCHAR(10)    NOT NULL    DEFAULT 'out', 
+    `transfer_money`      DOUBLE         NOT NULL    DEFAULT 0, 
+    `transfer_date`       TIMESTAMP      NULL        DEFAULT current_timestamp, 
+    `transfer_outcoment`  VARCHAR(50)    NULL, 
+    `transfer_incoment`   VARCHAR(50)    NULL, 
+    `transfer_name`       VARCHAR(20)    NOT NULL, 
+    `transfer_status`     INT            NULL        DEFAULT 0, 
+     PRIMARY KEY (transfer_num)
+);
+
+2) ATM 테이블
+
+CREATE TABLE atm
+(
+    `atm_num`     INT            NOT NULL    AUTO_INCREMENT, 
+    `account_id`  VARCHAR(16)    NOT NULL, 
+    `atm_type`    VARCHAR(10)    NOT NULL, 
+    `atm_money`   DOUBLE         NOT NULL    DEFAULT 0, 
+    `atm_date`    TIMESTAMP      NULL        DEFAULT current_timestamp, 
+    `atm_status`  INT            NULL        DEFAULT 0, 
+     PRIMARY KEY (atm_num)
+);
+
+3) 자동이체 테이블
+
+CREATE TABLE auto_transfer
+(
+    `at_number`      INT            NOT NULL    AUTO_INCREMENT, 
+    `account_id`     VARCHAR(16)    NOT NULL, 
+    `at_account`     VARCHAR(16)    NOT NULL, 
+    `at_type`        VARCHAR(10)    NOT NULL, 
+    `at_outdate`     int            NOT NULL, 
+    `at_money`       DOUBLE         NOT NULL    DEFAULT 0, 
+    `at_cycle`       int            NULL        DEFAULT 0, 
+    `at_startdate`   DATETIME       NOT NULL    DEFAULT sysdate(), 
+    `at_enddate`     DATETIME       NOT NULL    DEFAULT sysdate(), 
+    `at_cancledate`  DATETIME       NULL, 
+    `at_status`      INT            NULL        DEFAULT 0, 
+     PRIMARY KEY (at_number)
+);

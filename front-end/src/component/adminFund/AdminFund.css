@@ -1,0 +1,126 @@
+/* 펀드 리스트 */
+.FundProductAdmin {
+    height: 100rem;
+    margin-left: 3rem;
+}
+
+.FundProductAdmin h2, h5{
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.AdminFundProductTop {
+    height: 35%;
+}
+
+.AdminFundProductBottom {
+    height: 50rem;
+    padding: 2rem;
+}
+
+.AdminFundProductList {
+    margin-top: 3rem;
+} 
+
+/* .FundProductAdmin {
+    width: 90rem;
+    padding: 3rem;
+} */
+
+.FundGrp {
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.FundTopGrpPart h2, .FundBottomGrpPart h2 {
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.FundTopGrp {
+    background-color: #eee;
+    width: 30rem;
+    height: 25rem;
+}
+
+.FundBottomGrp {
+    background-color: #eee;
+    width: 30rem;
+    height: 25rem;
+}
+
+.AdminFundProductList {
+    height: 40rem;
+    font-size: 1.6rem;
+}
+
+.AdminFundTable {
+    width: 100%;
+    height: 80%;
+}
+
+.AdminFundPDthead {
+    background-color: #eee;
+}
+
+.AdminFundPDthead td {
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.AdminFundPDtbody td {
+    border-bottom: 0.3rem solid #eee;
+    font-size: 1.3rem;
+    padding: 0.7rem 0 0.7rem 0;
+}
+
+.AdminFundPDtbody h1 {
+    font-weight: 400;
+    color: #d7d7d7; 
+}
+
+/* 펀드 상품 관리 */
+.AdminFundPDtbody button {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    color: #679BFF;
+    background-color: #eee;
+    margin: 0 0.3rem 0 0.3rem
+}
+.AdminFundPDtbody span {
+    color: #d7d7d7;
+}
+
+/* 펀드 상품 수정 */
+.AdminFundFixPage {
+    margin: 0 0 0 8rem;
+    padding: 0 3rem 3rem 3rem;
+    width: 90rem;
+}
+
+.Fund_RePayMentTop h2 {
+    margin-top: 7rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: none;
+  }
+
+.Fund_RePayMentbodyInput .AdminFundFixContent input {
+    border: 1px solid #d7d7d7;
+    width: 60rem !important;
+}
+
+.react-datepicker__month-container {
+    width: 28rem;
+    height: 15rem;
+    font-size: 1rem;
+}
+
+.Fund_RePayMentbodyInput select{
+    width: 10rem;
+    height: 3rem;
+}

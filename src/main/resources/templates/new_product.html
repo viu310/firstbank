@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create New Product</title>
+</head>
+<body>
+
+<div align="center">
+	<h1>Create New Product</h1>
+	
+	<form action="#" th:action="@{/save}" th:object="${dto}"  method="post">  <!-- 컨트롤러의 "/save"로 이동 -->
+		<table border="1"  cellpadding="10">
+		
+			<!--  사용안함 : id는 max+1로 insert 구현 
+			<tr>
+				<td> Product ID :  </td>
+				<td><input type="text"  name="id"></td>
+			</tr> 
+			-->
+			
+			<tr>
+				<td> Product  Name :  </td>
+				<td><input type="text"  th:field="*{name}"></td>
+			</tr> 
+			
+			<tr>
+				<td> Product Brand :  </td>
+				<td><input type="text"   th:field="*{brand}"></td>
+			</tr> 
+			
+			<tr>
+				<td> Product madeIn :  </td>
+				<td><input type="text"   th:field="*{madein}"></td>
+			</tr> 
+			
+			<tr>
+				<td> Product Price :  </td>
+				<td><input type="text"  th:field="*{price}"></td>
+			</tr> 
+			
+			<tr>
+				<td colspan="2"><button type="submit">save</button></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

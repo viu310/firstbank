@@ -1,0 +1,73 @@
+.adminHeader{
+    overflow-x: hidden;
+}
+.headerTitle {
+    width: 100%;
+    background-color: #0E2473;
+    display: flex;
+    justify-content: flex-end; /* 내부 요소들을 오른쪽으로 정렬 */
+    align-items: center;
+    padding: 0.5rem; 
+}
+
+.headerTitle div, .headerTitle a {
+    font-weight: 200;
+    font-size: 1.4rem;
+    color: #eee;
+    margin-left: 1.5rem;
+}
+
+.headerTitle > div:first-child {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+.headerTitle a {
+    margin-right: 3rem;
+    text-decoration: none;
+}
+.headerTitle span{ 
+    font-weight: 600;
+}
+
+/* 왼쪽메뉴 */
+.headerLeft {
+    background-color: #0E2473;
+    width: 20rem;
+    min-height: 100vh;
+    height: 100%;
+    
+}
+.headerLeft .MuiTypography-root a{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.headerLeft AccordionSummary>Typography{
+    color: #eee;
+}
+.headerLeft .MuiButtonBase-root{
+border-radius: 0 !important;
+border-bottom: 0.2rem solid #fff;
+background-color: #0E2473;
+}
+.adminHeader .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded{
+margin: 0 !important;
+}
+/* 화살표아이콘 */
+.headerLeft .MuiSvgIcon-root {
+    color: #fff !important;
+    font-size: 2rem;
+}
+.adminHeader .MuiAccordionDetails-root{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.adminHeader .MuiAccordionDetails-root a{
+    color: #333;
+    text-decoration: none;
+}
+.adminHeader .accordionPadding{
+    padding: 1rem 0 1rem;
+}

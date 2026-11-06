@@ -1,0 +1,194 @@
+/* 환율계산기 */
+
+.ex_con_wrap {
+    padding: 3rem;
+
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 1px 30px rgba(126, 126, 126, 0.1)
+}
+
+.ex_tr td {
+    padding: 3em !important;
+    background-color: #fff !important;
+}
+
+.ex_btn {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.ex_btn div {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 10rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ex_btn div:last-child {
+    color: #fff;
+}
+
+.ex_btn_info {
+    color: crimson;
+    margin-bottom: 1.5rem;
+}
+
+.ex_con {
+    display: flex;
+    margin-bottom: 0.2rem;
+
+    margin-bottom :0.5rem;
+
+}
+
+.ex_con select,
+.ex_con input {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    color: #6B6B6B;
+}
+
+.ex_con input {
+    background-color: #eee;
+}
+
+.ex_cal_btn {
+    margin-left: 1rem;
+    border: 1px solid #679BFF;
+    background-color: #fff;
+    width: 8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #679BFF;
+}
+
+.ex_result td {
+    background-color: rgb(227, 243, 255) !important;
+}
+.ex_result td:first-child {
+    width:50% !important;
+}
+
+.ex_result_top div {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.ex_result_top div:first-child {
+    color: #001d9c;
+    font-weight: 600;
+}
+
+.ex_result_top div:last-child span {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+}
+
+.ex_chart {
+    background-color: #fff;
+    min-height: 10rem;
+}
+
+/* 실시간환율 */
+.real_tab {
+    display: flex;
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+.real_tab div{
+    width: 33%;
+    margin: 0 auto;
+    border-right: 1px solid #6B6B6B;
+}
+.real_tab div:last-child{
+    border: none;
+}
+.real_tab div button{
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #6B6B6B;
+}
+
+/* 환율 2번째 테이블 */
+
+
+.real_tab2{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(227, 243, 255) !important;
+}
+.real_tab2 th{
+    background-color: rgb(227, 243, 255) !important;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    color: #001d9c;
+    
+}
+
+.real_tab2 th span{
+    color: #6B6B6B;
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    font-weight: 400;
+}
+
+.real_box tr{
+    border-bottom: 1px solid #eee;
+}
+.real_box tr td{
+    background-color: #fff !important;
+    border:  1px solid #eee;
+}
+
+/* 환전예약 */
+.ex_tbody input{
+    width: 10rem;
+}
+.ex_td_con td div{
+    border-right: 1px solid #eee;
+}
+.ex_div>div{
+    border-right: none !important;
+}
+/* .ex_date div{
+    display: inline-block !important;
+} */
+.ex_date div span{
+   margin-right: 0.5rem;  
+}
+
+/*  */
+
+.top_con{
+    text-align: center;
+}
+
+.top_filter{
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+.top_filter button{
+
+    border-radius: 15%;
+}
+
+
+.ex_con select{
+    width:20rem;
+}
+
+.ex_bottomBtn {
+    text-align: center;
+}

@@ -1,0 +1,283 @@
+/* 콘텐츠 영역 조절합니다 */
+.wrap {
+    display: flex;
+}
+
+.side {
+    flex: 0 0 30%; 
+    
+}
+.side #sidebar-container{
+    position: fixed;
+    top: 21.5rem;
+    width: 16rem;
+ }
+.con {
+    flex: 0 0 50%;
+    margin-top: 8rem;
+    
+}
+
+/* 반응형 */
+@media (max-width: 1280px){
+    .side {
+        flex: 0 0 35%;
+        
+    }
+    .side #sidebar-container{
+        position: fixed;
+        top: 21.5rem;
+        width: 16rem;
+        
+     }
+    .con {
+        flex: 0 0 50%;
+        margin-top: 8rem;
+    }
+}
+@media (max-width: 1024px){
+    .side {
+        flex: 0 0 38%;    
+       
+    }
+    .side #sidebar-container{
+       position: fixed;
+       top: 21.5rem;
+       width: 16rem;
+    }
+    .con{
+        flex: 0 0 55%;
+        margin-top:8rem;
+    }
+}
+
+@media (max-width: 400px){
+    .wrap {
+        justify-content: flex-start;
+    }
+    
+    .side {
+        flex: 0 0 45%;    
+       
+    }
+    .side #sidebar-container{
+       position: fixed;
+       left: 0;
+       width: 40%;
+    }
+    .con {
+        flex: 0 0 55%;
+        margin-top: 5rem;
+    }
+}
+/* 반응형끝 */
+
+
+
+/* 루트링크 뱅킹관리 > 계좌조회 > 예금 */
+.bankRoot{
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+   
+}
+.bankRoot a{
+    text-decoration: none;
+    color: #333;
+}
+/* 루트링크 끝 */
+
+.bankStyle {
+    text-align: left;
+}
+
+.bankStyle .top-nav ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+
+.bankStyle .top-tit{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bankStyle .top-nav ul{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0 1rem;
+    background-color: #F6F6F6;
+    border-bottom:  0.2rem solid #679BFF;
+
+}
+
+.bankStyle .top-nav li{
+    font-size: 1.2rem;
+    
+}
+.bankStyle .top-nav .on{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    border: 0.2rem solid #679BFF;
+    border-bottom:  0.2rem solid #fff;
+}
+
+.bankStyle .top-nav a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+}
+
+.bankStyle .section1{
+    clear: both;
+    margin-top: 7rem;
+}
+
+.section1 .date{
+    font-size: 1.2rem;
+    color: #6B6B6B;
+    margin-bottom: 5rem;
+}
+.section1 .content1 p{
+    font-size: 2.8rem;
+    color: #6B6B6B;
+}
+.section1 .content1 p>span{
+    font-weight: 900;
+    color:#333;
+}
+
+/* 총잔액 */
+.all-money{
+    text-align: right;
+    margin-top: -1rem;
+}
+.all-money div{
+    margin-bottom: 0.2rem;
+   
+}
+.all-money div:last-child{
+    font-size: 1.7rem;
+    align-items: center;
+}
+.all-money div:last-child span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+/* 총잔액끝 */
+
+/* 예금잔액  */
+.bank-money{
+    margin: 2rem 0 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6B6B6B;
+}
+.bank-money span{
+    padding-left: 0.8rem;
+    font-weight: bold;
+    color: #679BFF;
+}
+/* 테이블 */
+.bank-table{
+    margin-bottom: 2rem;
+}
+.bank-table, .bank-table tr, .bank-table td, .bank-table th, .bank-table thead, .bank-table tbody{
+    width: 100%;
+    border: none !important;
+}
+.bank-table thead tr{
+    background-color: #F6F6F6;
+    padding:  1rem 0 1rem;
+}
+.bank-table th{
+    padding-left: 1rem;
+    font-weight: 200;
+}
+.bank-table th span{
+    padding-left: 0.5rem;
+}
+
+.bank-dot{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #679BFF;
+    border-radius: 2rem;
+}
+.tab-title{
+    font-weight: bold !important;
+}
+.detail-money{
+    font-weight: bold !important;
+    color: #679BFF;
+}
+.bank-table td{
+    border-bottom: 1px solid #eee !important;
+}
+
+.bank-table td{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.bank-table td>div{
+    width: 30%;
+}
+.ac-info{
+    width: 50% !important;
+
+}
+.ac-info div:first-child{
+    font-weight: bold;
+    
+}
+.bank-table td>div>span{
+    font-weight: bold !important;
+    color: #679BFF;
+}
+.bank-table td>div:last-child{
+    padding-left: 2rem;
+    text-align: right;
+}
+.bank-table td button{
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+/* 페이징 */
+.bank-paging{
+    margin: 5rem 0 5rem;
+    text-align: center;
+}
+.page-num{
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #679BFF;
+}
+
+/* 계좌이체 */
+.bankStyle > hr{
+    border: 1px solid #333;
+}
+.trans-step{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #6B6B6B;
+}

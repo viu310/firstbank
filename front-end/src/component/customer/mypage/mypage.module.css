@@ -1,0 +1,89 @@
+
+#container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			height: 90vh;
+		}
+
+		#login_container {
+			text-align: center;
+			width: 500px;
+			/* 편한 크기로 조절하세요 */
+			border-radius: 10px;
+			background-color: #F4F5F8;
+			margin-top:40px;
+		}
+
+		#admin_login h1 {
+			position: relative;
+			/* position 속성을 relative로 변경 */
+			top: -30px;
+			background-color: #fff;
+			padding: 20px;
+			margin: 0;
+			display: inline-block;
+		}
+
+		#admin_login2 {
+			margin-top: -20px;
+		}
+
+		#admin_login_inner {
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		th,
+		td {
+			padding: 10px;
+			text-align: left;
+		}
+
+		.input {
+			width: calc(100% - 20px);
+			/* 입력창 너비 조절 */
+			box-sizing: border-box;
+			padding: 10px;
+			margin: 5px 0;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			/* 테두리 모서리를 둥글게 만듦 */
+			font-size: 16px;
+			/* 폰트 크기 조절 */
+		}
+
+		button {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px;
+			margin-top: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		#loginbtn {
+			background: linear-gradient(to right, #E34891, #1877F2);
+			transition-duration: 0.2s;
+			transition-behavior: normal;
+			transition-timing-function: ease;
+			transition-delay: 0s;
+			transition-property: all;
+		}
+
+		#loginbtn:hover {
+			background: linear-gradient(to right, #1877F2, #E34891);
+			transition-duration: 0.2s;
+			transition-behavior: normal;
+			transition-timing-function: ease;
+			transition-delay: 0s;
+			transition-property: all;
+		}

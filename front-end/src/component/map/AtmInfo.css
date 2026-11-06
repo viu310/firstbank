@@ -1,0 +1,105 @@
+.Map {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    justify-content: center;
+    height: 740px;
+}
+
+.MapListTitle {
+    height: 100px;
+}
+
+.MapListTitle h4 {
+    font-weight: 600;
+    background-color: #eee;
+    padding: 10px 0 10px;
+    /* padding: 0.7rem 0 0.7rem 0; */
+}
+
+.MapList {
+    margin-top: 1rem;
+    /* padding: 0.2rem; */
+    justify-content: space-evenly;
+
+    margin-left: -15px;
+}
+
+.MapListthead {
+    /* margin-left: -24px;
+    width: 40%; */
+}
+.MapList{
+    border: none !important;
+}
+.MapListthead li {
+    text-align: left !important;
+    font-weight: 600; /* 원하는 굵기 값으로 설정 */
+    padding: 2px;
+    height: 35px !important;
+}
+
+.MapList>ul{
+    /* padding-bottom: 1.5rem; */
+    border-bottom: 1px solid #eee;
+}
+.MapListtbody {
+    width: 250px;
+    text-align: left;
+    padding-right: -24px;
+}
+
+.center-h {
+    text-align: center; /* 가로 중앙 정렬 */
+}
+
+.center-v {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+.MapListtbodyspan span {
+    padding: 6px;
+    height: 50% !important;
+}
+
+.MapL {
+    font-size: 15px;
+}
+
+.MapR {
+    margin-left: 30px;
+    width: 1200;
+}
+
+.MapListTexts {
+    display: flex;
+    flex-direction: row;
+}
+
+.MapR .MapImg {
+    text-align: right;
+    padding: 20px;
+}
+
+.MappageNation Pagination {
+    list-style-type: none !important; 
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 3rem !important;
+}
+
+/* 페이징 */
+.Fund_paging{
+    margin: 5rem 0 5rem;
+    text-align: center;
+}
+
+.Fund_page_num{
+    margin: 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #679BFF;
+}

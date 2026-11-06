@@ -1,0 +1,117 @@
+
+/* LoanMainSlide.module.css */
+/* LoanMainSlide.module.css */
+
+
+/* 루트링크 뱅킹관리 > 계좌조회 > 예금 */
+.bankRoot{
+  display: block;
+  text-align: right;
+  margin-bottom: 2rem;
+ 
+}
+.bankRoot a{
+  text-decoration: none;
+  color: #333;
+}
+/* 루트링크 끝 */
+
+
+.rec_tbl {
+  padding: 5rem;
+  border-radius: 5%;
+  width: 100%;
+}
+
+/* LoanMain.module.css */
+
+.row:hover {
+  background-color: #f0f0f0; /* 원하는 배경 색상으로 변경하세요 */
+}
+
+
+
+.rec_tbl th, .rec_tbl td {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2%;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.rec_tbl th {
+  background-color: hsl(212, 68%, 17%); /* 파란색 배경색 추가 */
+  color: white; /* 글자색 흰색으로 설정 */
+  
+}
+
+/* LoanMainSlide.module.css */
+.recommand{
+  margin-right: 0;
+  margin-top: 8rem;
+  width: 100%;
+  
+}
+
+src{
+  object-fit: cover;
+}
+
+.carousel-control-next-icon {
+display: none;
+}
+
+.list{
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.list td{
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.list1 {
+  margin-top: 2rem;
+  width: 100%;
+  overflow: auto; /* 가로 스크롤바가 생길 경우를 대비해서 추가 */
+  padding: 2rem;
+ 
+}
+
+.list1 table {
+  width: 100%;
+  table-layout: fixed; /* 테이블의 너비를 고정값으로 설정 */
+  
+}
+
+.list1 tr {
+  width: 100%;
+  table-layout: fixed; /* 테이블의 너비를 고정값으로 설정 */
+  padding-bottom: none;
+}
+
+.list1 td {
+  width: 100%;
+  white-space: nowrap; /* 텍스트가 한 줄에 표시되도록 설정 */
+  overflow: hidden; /* 너무 긴 텍스트를 숨기고 나머지는 보이지 않게 함 */
+  text-overflow: ellipsis; /* 텍스트가 너무 길 경우 생략 부호(...)를 표시 */
+  padding: 2rem;
+  text-align: left;
+}
+
+
+/* CSS 모듈 (LoanMainSlide.module.css) */
+.boldText {
+  font-weight: bold;
+  width: 100%;
+  font-size: 2rem; /* 또는 원하는 크기로 조절하세요. */
+}
+
+.boldText_down{
+  font-size: 1rem;
+}
+
+.td {
+padding-bottom: none;
+}
