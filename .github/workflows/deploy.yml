@@ -37,6 +37,8 @@ jobs:
       - name: Build React
         working-directory: front-end
         run: npm run build
+        env:
+          CI: "false"
 
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
