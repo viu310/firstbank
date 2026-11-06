@@ -1,4 +1,4 @@
-import { React, useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import styles from './product.module.css';

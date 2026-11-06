@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import styles from "./mypage.module.css";
 import InputAdornment from '@mui/material/InputAdornment';
