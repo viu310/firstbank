@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Firstbank
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+개인 프로젝트 **Firstbank**의 프론트엔드 저장소입니다.
 
-## Available Scripts
+React 기반으로 개발되었으며, GitHub Pages를 통해 웹 서비스를 배포합니다.
 
-In the project directory, you can run:
+## 🌐 Demo
 
-### `npm start`
+- **Website:** https://viu310.github.io/firstbank/
+- **Repository:** https://github.com/viu310/firstbank
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- JavaScript (JSX)
+- HTML5 / CSS3
+- Material UI
+- GitHub Pages
+- GitHub Actions
 
-### `npm test`
+## 📁 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+firstbank/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+└── front-end/
+    ├── public/
+    │   └── index.html
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   └── ...
+    ├── package.json
+    └── package-lock.json
+```
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/viu310/firstbank.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Move to Front-end Directory
 
-### `npm run eject`
+```bash
+cd firstbank/front-end
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install --legacy-peer-deps
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Run Development Server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+브라우저에서 아래 주소로 접속합니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📦 Build
 
-### Code Splitting
+프로덕션 배포용 파일을 생성하려면 다음 명령어를 실행합니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+빌드 결과물은 `front-end/build` 디렉터리에 생성됩니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚢 Deployment
 
-### Making a Progressive Web App
+GitHub Actions를 사용하여 GitHub Pages에 자동 배포합니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. `main` 브랜치에 변경 사항 Push
+2. GitHub Actions 자동 실행
+3. React 프로젝트 빌드
+4. 빌드 결과물을 GitHub Pages에 배포
 
-### Advanced Configuration
+### Deployment Workflow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Workflow: `.github/workflows/deploy.yml`
+- Build Directory: `front-end/build`
+- Deployment Branch: `main`
+- Hosting: GitHub Pages
 
-### Deployment
+## 🔗 Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Live Website](https://viu310.github.io/firstbank/)
+- [GitHub Repository](https://github.com/viu310/firstbank/)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2026 Firstbank. All rights reserved.
